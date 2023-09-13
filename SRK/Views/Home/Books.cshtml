@@ -1,0 +1,141 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    ViewBag.Title = "Books";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="content-container">
+    <h2>Books</h2>
+    <article>
+        <header>Navigating the Digital Age: Evoke Technologies Pvt Ltd's Odyssey in India</header>
+        <date>Published on December 15, 2023</date>
+        <p>
+            "Navigating the Digital Age" is an in-depth guide that unveils the strategies and innovations that have propelled Evoke
+            Technologies Pvt Ltd to the forefront of the Indian IT industry. This book offers insights into the company's expansion,
+            technological leadership, and its role in shaping the digital landscape of India.
+        </p>
+        <p>
+            Dive into case studies showcasing Evoke Technologies' successful projects across diverse domains, from software
+            development to data analytics. Learn how the company has fostered talent, embraced emerging technologies, and contributed
+            to India's digital revolution.
+        </p>
+        <p>
+            Whether you're a tech enthusiast, entrepreneur, or IT professional, this book offers valuable lessons on digital
+            transformation and staying ahead in the fast-paced world of technology.
+        </p>
+        <p>
+            Embark on a journey through Evoke Technologies Pvt Ltd's inspiring story and uncover the strategies that can drive
+            your organization's success in the digital age.
+        </p>
+    </article>
+
+
+    <!-- Display a list of books shared by employees -->
+    <!-- Add a data attribute to store the state of the details for each book -->
+    <ul class="book-list">
+        <li>
+            <h3>The 7 Habits of Highly Effective People</h3>
+            <p>Author: Stephen R. Covey</p>
+            <p>Publication Year: 1989</p>
+            <p>Description: This timeless classic offers transformative insights into personal and professional effectiveness, providing readers with a holistic approach to achieving their goals.</p>
+            <!-- Add a hidden "More Details" box for the book -->
+            <div class="more-details" id="bookDetails1">
+                <p>
+                    This book is a must-read for anyone looking to improve their personal and professional effectiveness. Stephen R. Covey's "The 7 Habits of Highly Effective People" provides readers with a comprehensive guide to developing essential habits for success.
+                    <br>
+                    <br>
+                    Covey's insights into proactive behavior, time management, and the importance of focusing on what truly matters have made this book a classic in the self-help and leadership genres. Whether you're a student, professional, or business leader, this book offers valuable lessons that can help you achieve your goals and lead a more fulfilling life.
+                </p>
+            </div>
+            <!-- Add a "More Details" link with a data attribute -->
+            <a class="more-details-link" data-details="bookDetails1">More Details</a>
+        </li>
+        <li>
+            <h3>The Resilient Entrepreneur</h3>
+            <p>Author: Rajesh Sharma</p>
+            <p>Publication Year: 2020</p>
+            <p>Description: A compelling journey of Indian entrepreneurs who overcame challenges and emerged stronger in the competitive corporate landscape.</p>
+            <!-- Add a hidden "More Details" box for the book -->
+            <div class="more-details" id="bookDetails2">
+                <p>
+                    "The Resilient Entrepreneur" by Rajesh Sharma explores the inspiring stories of Indian entrepreneurs who faced adversity and emerged as successful business leaders. This book is a testament to the resilience, innovation, and determination of individuals who have made a significant impact in the corporate world.
+                    <br>
+                    <br>
+                    Through captivating narratives and valuable insights, Sharma highlights the qualities and strategies that set these entrepreneurs apart. Whether you're an aspiring business owner or simply looking for motivation, this book offers valuable lessons on navigating challenges and achieving success.
+                </p>
+            </div>
+            <!-- Add a "More Details" link with a data attribute -->
+            <a class="more-details-link" data-details="bookDetails2">More Details</a>
+        </li>
+        <li>
+            <h3>Leadership Lessons from Indian CEOs</h3>
+            <p>Author: Priya Kapoor</p>
+            <p>Publication Year: 2019</p>
+            <p>Description: Discover the leadership styles and strategies of top Indian CEOs who transformed their organizations into industry leaders.</p>
+            <!-- Add a hidden "More Details" box for the book -->
+            <div class="more-details" id="bookDetails3">
+                <p>
+                    "Leadership Lessons from Indian CEOs" by Priya Kapoor offers valuable insights into the leadership styles and strategies of some of India's most successful CEOs. Kapoor delves into the experiences and decisions that shaped these leaders and their organizations.
+                    <br>
+                    <br>
+                    Whether you're a business enthusiast or aspiring to reach new heights in your career, this book provides valuable lessons on leadership, innovation, and achieving excellence in the corporate world.
+                </p>
+            </div>
+            <!-- Add a "More Details" link with a data attribute -->
+            <a class="more-details-link" data-details="bookDetails3">More Details</a>
+        </li>
+        <!-- Add more books as needed -->
+    </ul>
+
+    
+
+
+
+
+
+    <!-- Form for employees to share new books -->
+    <h3>Share a Book</h3>
+    <form>
+        <label for="bookTitle">Title:</label>
+        <input type="text" id="bookTitle" name="bookTitle" required>
+
+        <label for="bookAuthor">Author:</label>
+        <input type="text" id="bookAuthor" name="bookAuthor" required>
+
+        <label for="publicationYear">Publication Year:</label>
+        <input type="text" id="publicationYear" name="publicationYear" required>
+
+        <label for="bookDescription">Description:</label>
+        <textarea id="bookDescription" name="bookDescription" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+
+<!-- JavaScript/jQuery code -->
+<script>
+    $(document).ready(function () {
+        // Add click event listener to all "More Details" links
+        $(".more-details-link").click(function () {
+            // Get the data-details attribute value
+            var detailsId = $(this).data("details");
+
+            // Toggle the visibility of the corresponding details box
+            $("#" + detailsId).slideToggle();
+
+            // Prevent the default link behavior
+            return false;
+        });
+    });
+</script>

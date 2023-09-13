@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SRK</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SRK.styles.css" asp-append-version="true" />
+  </head>
+
+<body>
+    <div class="navbar">
+        <h1>Share Right Knowledge</h1>
+        <ul class="nav-tabs">
+            <li>
+                <div class="cylindrical-tab">
+                    <a style="color:white;text-decoration: none;" asp-controller="Home" asp-action="Index">Home</a>
+                </div>
+            </li>
+            <li>
+                
+                <div class="cylindrical-tab">
+                    Suggestions
+                    <ul class="dropdown">
+                       
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="Articles">Articles</a>
+
+                        </li>
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="Books">Books</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="cylindrical-tab" id="technical-queries-tab">
+                    Technical Queries
+                    <!-- Using asp-action and asp-controller in the dropdown list -->
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="TechnicalInfoPartial">Whole organization</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="TechnicalInfoPartial">Microsoft</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="TechnicalInfoPartial">RPA</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="TechnicalInfoPartial">PEGA</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="TechnicalInfoPartial">JAVA</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="TechnicalInfoPartial">UI/UX</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="TechnicalInfoPartial">Data Science</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="TechnicalInfoPartial">Python</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="TechnicalInfoPartial">Q/A</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a asp-controller="Home" asp-action="TechnicalInfoPartial" >Sales</a> <!-- Include Sales -->
+                        </li>
+                    </ul>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+   
+    </div>
+    
+    
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+
+

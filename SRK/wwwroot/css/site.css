@@ -1,0 +1,657 @@
+/* Add your existing site.css styles above this comment */
+
+/* Styles for the body */
+body {
+    background-color: #f0f8ff; /* Light Blue color for the whole page */
+    background-image: url('https://i.pinimg.com/originals/38/63/71/386371aefa3f7ff1f1101e1bb17c37ba.png'); /* Set your watermark image URL here */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    background-position: 90% 75%; /* Position the background image at the right center */
+    background-attachment: fixed; /* Keep the background image fixed */
+    margin: 0; /* Remove default margin */
+    background-size:25%;
+}
+
+
+/* Add your existing site.css styles below this comment */
+
+
+/* Styles for the navbar */
+.navbar {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 10px 50px;
+    text-align: center;
+    position: relative;
+    margin-left:2px;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .nav-tabs li {
+        margin-right: 10px;
+    }
+
+.cylindrical-tab {
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: azure;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    width: 150px;
+    top: 40px;
+    left: 0;
+    border: 1px solid #007bff;
+}
+
+.cylindrical-tab:hover .dropdown {
+    display: block;
+}
+
+.dropdown-item {
+    text-decoration:none !important;
+    padding: 5px;
+    cursor: pointer;
+}
+
+    
+    /* Modify the background color of the selected item and add a blue border on hover */
+    .dropdown-item:hover {
+        background-color: white;
+        border: 5px solid #007bff; /* Increase border width to 5px */
+        border-radius: 5px; /* Rounded edge border */
+    }
+
+
+
+/* Styles for text areas and buttons */
+.text-area-container {
+    width: 50%;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.text-area-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-field,
+.text-area {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+.buttons-container {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.publish-button,
+.reset-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+/* Styling for the intro section */
+.intro-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background (adjust the alpha value as needed) */
+    padding: 20px; /* Add padding for spacing */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Add margin to separate from other content */
+}
+
+
+    /* Heading styles */
+    .intro-section h2 {
+        color: #007bff; /* Blue color for headings */
+        font-size: 24px; /* Adjust the font size as needed */
+        margin-bottom: 15px; /* Add space below headings */
+    }
+
+    .intro-section h3 {
+        color: #333; /* Dark gray color for subheadings */
+        font-size: 20px; /* Adjust the font size as needed */
+        margin-top: 20px; /* Add space above subheadings */
+    }
+
+    /* Paragraph styles */
+    .intro-section p {
+        color: #555; /* Gray color for paragraphs */
+        font-size: 16px; /* Adjust the font size as needed */
+        margin-bottom: 10px; /* Add space below paragraphs */
+    }
+
+    /* List styles */
+    .intro-section ul {
+        list-style: disc; /* Use disc bullets for lists */
+        padding-left: 20px; /* Add left padding for lists */
+    }
+
+.content-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background (adjust the alpha value as needed) */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a card-like appearance */
+    margin: 20px; /* Add margin for spacing */
+}
+/* Style for form tags */
+form {
+    margin: 20px 0; /* Add margin to separate form elements */
+}
+
+/* Style for header tags */
+header {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the header text bold */
+    margin-bottom: 10px; /* Add spacing below headers */
+}
+/* Style for text fields (input and textarea) */
+input[type="text"],
+textarea {
+    width: 100%; /* Make text fields expand to the full container width */
+    padding: 10px;
+    margin-bottom: 15px; /* Add spacing between text fields */
+    border: 1px solid #ccc; /* Add a border to text fields */
+    border-radius: 5px; /* Round the corners of text fields */
+}
+
+/* Style for buttons */
+button {
+    background-color: #007bff; /* Blue background color for buttons */
+    color: white; /* White text color for buttons */
+    border: none; /* Remove the button border */
+    border-radius: 5px; /* Round the corners of buttons */
+    padding: 10px 20px; /* Add padding to buttons */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+    /* Style for buttons on hover */
+    button:hover {
+        background-color: #0056b3; /* Darker blue color on hover */
+    }
+/* Style for the <date> tag */
+date {
+    font-style: italic; /* Make the date text italic */
+    color: #555; /* Set the text color for the date */
+    margin-top: 5px; /* Add spacing above the date */
+}
+/* Styling for book list */
+/* Styling for book list */
+/* Styling for book list */
+/* Styling for book list */
+.book-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+    .book-list li {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .book-list h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+    .book-list p {
+        font-size: 14px;
+        color: #666;
+        margin: 5px 0;
+    }
+
+    /* Page Curl Effect */
+    .book-list li:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 0 0 20px;
+        border-color: transparent transparent transparent #f9f9f9;
+        transform: rotate(90deg);
+        transition: width 0.3s, height 0.3s;
+    }
+
+    .book-list li:hover:after {
+        width: 50px;
+        height: 50px;
+    }
+
+
+/* Styling for article list */
+/* Styling for article list */
+.article-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+    .article-list li {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .article-list h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+    .article-list p {
+        font-size: 14px;
+        color: #666;
+        margin: 5px 0;
+    }
+
+    /* Page Curl Effect */
+    .article-list li:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 0 0 20px;
+        border-color: transparent transparent transparent #f9f9f9;
+        transform: rotate(90deg);
+        transition: width 0.3s, height 0.3s;
+    }
+
+    .article-list li:hover:after {
+        width: 50px;
+        height: 50px;
+    }
+
+ 
+
+/* Style for the "More Details" links */
+
+.more-details-link {
+    /* Remove underline */
+    display: block;
+    text-align: center;
+    margin-top: 10px; /* Adjust spacing as needed */
+    cursor: pointer;
+}
+
+
+
+
+/* Style for the "More Details" boxes (initially hidden) */
+.more-details {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Style for the "More Details" boxes when shown */
+.show-more-details {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+
+
+.post-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.example-post {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Spacing between boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+    .employee-info {
+        font-weight: bold;
+    }
+    .example-post h3 {
+        font-size: 18px; /* Adjust heading font size */
+    }
+
+    .example-post .challenge-description {
+        margin-top: 10px; /* Spacing below headings */
+    }
+
+    .example-post p {
+        font-size: 14px; /* Adjust paragraph font size */
+        color: #333; /* Text color */
+    }
+
+    .example-post a {
+        text-decoration: none; /* Remove underline from links */
+        color: #007BFF; /* Link color */
+        margin-right: 10px; /* Spacing between links */
+    }
+
+    .example-post .replies-count {
+        color: #666; /* Replies count text color */
+        float: right; /* Align replies count to the right */
+    }
+.example-post .dis-rep {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Vertically center items */
+}
+
+.discuss-link {
+    /* Remove underline */
+    display: inline-block;
+    margin-right: 10px; /* Add some gap between the elements */
+    cursor: pointer;
+}
+
+.discuss-link, .more-details-link {
+    text-decoration: underline !important; /* Add underline to the links */
+    color: #666 !important; /* Dark grey text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+    /* Style the links on hover */
+    .discuss-link:hover, .more-details-link:hover {
+        text-decoration: none !important; /* Remove underline on hover */
+        color: #000 !important; /* Black text color on hover */
+    }
+
+  
+
+
+
+
+    /* Hover effect for better user experience */
+    .example-post:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+    }
+.employee-info-container {
+    background-color: #f5f5f5; /* Pale background color */
+    border: 1px solid #ddd; /* Pale border */
+    border-radius:5px;
+    padding: 10px; /* Add some padding to separate content */
+    opacity: 0.7; /* Dim the container */
+}
+    .employee-info-container .employee-info {
+        display: inline;
+        margin-right: 20px; /* Add some spacing between the elements */
+    }
+
+.comments-dropdown {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.be-comment-block {
+    margin-bottom: 50px !important;
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    padding: 50px 70px;
+    border: 1px solid #ffffff;
+}
+
+.comments-title {
+    font-size: 16px;
+    color: #262626;
+    margin-bottom: 15px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+}
+
+.be-img-comment {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.be-ava-comment {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.be-comment-content {
+    margin-left: 80px;
+}
+
+    .be-comment-content span {
+        display: inline-block;
+        width: 49%;
+        margin-bottom: 15px;
+    }
+
+.be-comment-name {
+    font-size: 13px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+}
+
+.be-comment-content a {
+    color: #383b43;
+}
+
+.be-comment-content span {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.be-comment-time {
+    text-align: right;
+}
+
+.be-comment-time {
+    font-size: 11px;
+    color: #b4b7c1;
+}
+
+.be-comment-text {
+    font-size: 13px;
+    line-height: 18px;
+    color: #7a8192;
+    display: block;
+    background: #f6f6f7;
+    border: 1px solid #edeff2;
+    padding: 15px 20px 20px 20px;
+}
+
+
+
+.form-group .form-input {
+    font-size: 13px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #b4b7c1;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border: 1px solid #edeff2;
+    border-radius: 3px;
+}
+
+.form-group.fl_icon .form-input {
+    padding-left: 10px;
+}
+
+.form-group textarea.form-input {
+    height: 150px;
+}
+
+/* Add this to your site.css file or style section */
+.voting-section {
+    display: inline-flex;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.thumbs-up,
+.thumbs-down {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    color: #777; /* Default color for thumbs */
+}
+
+.thumb-count {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: #333; /* Default color for count */
+}
+
+.thumbs-up:hover,
+.thumbs-down:hover {
+    color: #007bff; /* Color on hover */
+}
+/* Add this CSS to your site.css file */
+.reply-link:hover {
+    color: #007BFF; /* Change the link color on hover */
+    
+}
+
+.comments-section,
+.comment-box {
+    display: none; /* Initially hide the comments and comment box */
+}
+
+/* Add your styling for comments, comment box, and reply link here */
+/* Style for the comments-section */
+.comments-section {
+    background-color: #f5f5f5; /* Light greyish background color */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle depth effect */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+/* Style for the comment-box */
+.comment-box {
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+    /* Style for the name input field */
+    .comment-box .name-input {
+        width: 100%; /* Make the input field expand to the full width */
+        padding: 10px;
+        margin-bottom: 15px; /* Add spacing between the input field and textarea */
+        border: 1px solid #ccc; /* Add a border to the input field */
+        border-radius: 5px; /* Round the corners */
+    }
+
+    /* Style for the comment-input (textarea) */
+    .comment-box .comment-input {
+        width: 100%; /* Make the textarea expand to the full width */
+        padding: 10px;
+        border: 1px solid #ccc; /* Add a border to the textarea */
+        border-radius: 5px; /* Round the corners */
+        resize: vertical; /* Allow vertical resizing of the textarea */
+    }
+
+    /* Style for the post-button */
+    .comment-box .post-button {
+        background-color: #007bff; /* Blue background color for the button */
+        color: white; /* White text color for the button */
+        border: none; /* Remove the button border */
+        border-radius: 5px; /* Round the corners of the button */
+        padding: 7px 20px; /* Add padding to the button */
+        font-size: 16px; /* Font size for the button */
+        cursor: pointer; /* Add a pointer cursor on hover */
+    }
+
+        .comment-box .post-button:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+        }
+
+
+
+/*Original styling code*/
+
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}

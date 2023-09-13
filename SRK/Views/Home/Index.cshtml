@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Share Right Knowledge";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="intro-section">
+    <h2>Welcome to the Knowledge Sharing Portal</h2>
+    <p>
+        Our Knowledge Sharing Portal at Evoke Technologies Pvt Ltd is designed to foster collaboration and empower our employees to share and access valuable knowledge within our organization.
+    </p>
+
+    <h3>Why Use this Portal?</h3>
+    <p>
+        - Stay Informed: Keep up-to-date with the latest industry trends, best practices, and company updates.<br>
+        - Share Expertise: Share your knowledge, insights, and experiences with colleagues to enhance collective learning.<br>
+        - Problem Solving: Find solutions to technical challenges and gain insights from experts across various domains.<br>
+        - Collaboration: Connect with peers, discuss ideas, and work together on projects.<br>
+    </p>
+
+    <h3>How to Get Started</h3>
+    <p>
+        To begin using the portal, simply click on the "Technical Queries" tab and select your area of interest. You can then post questions, share knowledge, and engage with fellow employees. Our portal is a hub of information, and your contributions are highly valued.
+    </p>
+</div>
+
+
+<!-- Container to load the partial view -->
+<div id="partial-container" class="text-area-container hidden"></div>
+
+@section Scripts {
+    <script>
+        // Function to load a partial view into a container
+        function loadPartialView(actionName) {
+            $.get("/Home/" + actionName, function (data) {
+                $("#partial-container").html(data);
+            });
+        }
+
+        // Attach click event to all dropdown items under "Technical Queries"
+        $("li[data-toggle-partial]").on("click", function () {
+            var actionName = $(this).data("toggle-partial");
+            loadPartialView(actionName);
+        });
+    </script>
+}

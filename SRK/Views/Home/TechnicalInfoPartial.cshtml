@@ -1,0 +1,695 @@
+﻿
+  
+      
+
+  <html>
+      <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+      </head>
+
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <form action="your-action-url-here" method="post">
+        <h2>Employee Technical Challenge Sharing</h2>
+        <div class="text-area-title">Employee ID</div>
+        <input type="text" class="input-field" name="employeeId" placeholder="Enter your Employee ID" required>
+
+        <div class="text-area-title">Employee Name</div>
+        <input type="text" class="input-field" name="employeeName" placeholder="Enter your Employee Name" required>
+
+        <div class="text-area-title">Technical Challenge</div>
+        <textarea class="text-area" name="technicalChallenge" placeholder="Describe your technical challenge" required></textarea>
+
+        <div class="buttons-container">
+            <button class="publish-button" type="submit">Share</button>
+            <button class="reset-button" type="reset">Reset</button>
+        </div>
+    </form>
+
+<ul class="post-list">
+    <!-- Existing post -->
+    <li class="example-post">
+        <div class="employee-info-container">
+            <p class="employee-info">Employee ID: 5123</p>
+            <p class="employee-info">Employee Name: Alok Sharma</p>
+        </div>
+        <div class="challenge-description">
+            <p class="employee-info">Technical Challenge</p>
+            <p class="short-description">
+                I'm facing a technical challenge in my ASP.NET project. I'm working on implementing a complex authentication system with role-based access control for a corporate portal.
+            </p>
+            <p class="full-description" style="display: none;">
+                While I have made progress, I'm encountering issues with user role management and permissions. The challenge involves fine-tuning the authorization logic to ensure that only authorized users can access specific parts of the application. I'm seeking guidance and best practices from the community to overcome this challenge and enhance the security of the corporate portal.
+            </p>
+            <a href="#" class="more-details-link" id="more-details-link">More Details</a>
+            <a href="#" class="discuss-link">Discuss</a>
+            <span class="replies-count">3 Replies</span>
+
+            <div class="comments-dropdown" style="display: none;">
+                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+                <div class="container">
+                    <div class="be-comment-block">
+                        <h1 class="comments-title">Comments (3)</h1>
+                        <div class="be-comment">
+                            <div class="be-img-comment">
+                                <a href="blog-detail-2.html">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="be-ava-comment">
+                                </a>
+                            </div>
+                            <div class="be-comment-content">
+                                <span class="be-comment-name">
+                                    <a href="blog-detail-2.html">Rajeev Varma</a>
+                                </span>
+                                <span class="be-comment-time">
+                                    <i class="fa fa-clock-o"></i>
+                                    August 15, 2023
+                                </span>
+                                <p class="be-comment-text">
+                                    For your ASP.NET project problem, you can enhance the authorization logic by implementing role-based access control. Ensure that only authorized users can access specific parts of the application. Consider using claims-based authentication and storing user roles in the database. This will help improve the security of your corporate portal.
+                                </p>
+                                <div class="voting-section" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex;">
+                                        <i class="fa fa-thumbs-up thumbs-up"></i>
+                                        <span class="thumb-count">0</span>
+                                        <i class="fa fa-thumbs-down thumbs-down"></i>
+                                        <span class="thumb-count">0</span>
+                                    </div>
+                                    <a class="reply-link" href="#">
+                                        <i class="fa fa-reply" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                                <div class="comments-section">
+                                    <!-- Comments list here (can be dynamically generated with JavaScript) -->
+                                    <div class="comment">
+                                        <span class="comment-author">John Doe:</span>
+                                        <p class="comment-text">This is a comment.</p>
+                                    </div>
+                                    <!-- Add more comments as needed -->
+                                </div>
+                                <div class="comment-box">
+                                    <input class="name-input" type="text" placeholder="Your Name">
+                                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                                    <button class="post-button">Post</button>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="be-comment">
+                            <div class="be-img-comment">
+                                <a href="blog-detail-2.html">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="be-ava-comment">
+                                </a>
+                            </div>
+                            <div class="be-comment-content">
+                                <span class="be-comment-name">
+                                    <a href="blog-detail-2.html">Arjun Kumar</a>
+                                </span>
+                                <span class="be-comment-time">
+                                    <i class="fa fa-clock-o"></i>
+                                    August 17, 2023
+                                </span>
+                                <p class="be-comment-text">
+                                    To optimize database queries in your Java application, consider using proper indexing and query optimization techniques. Identify slow-performing queries and use tools like EXPLAIN to analyze query execution plans. Additionally, review your database schema for any normalization opportunities to reduce redundancy and improve query performance.
+                                </p>
+                                <div class="voting-section" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex;">
+                                        <i class="fa fa-thumbs-up thumbs-up"></i>
+                                        <span class="thumb-count">0</span>
+                                        <i class="fa fa-thumbs-down thumbs-down"></i>
+                                        <span class="thumb-count">0</span>
+                                    </div>
+                                    <a class="reply-link" href="#">
+                                        <i class="fa fa-reply" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                                <div class="comments-section">
+                                    <!-- Comments list here (can be dynamically generated with JavaScript) -->
+                                    <div class="comment">
+                                        <span class="comment-author">John Doe:</span>
+                                        <p class="comment-text">This is a comment.</p>
+                                    </div>
+                                    <!-- Add more comments as needed -->
+                                </div>
+                                <div class="comment-box">
+                                    <input class="name-input" type="text" placeholder="Your Name">
+                                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                                    <button class="post-button">Post</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="be-comment">
+                            <div class="be-img-comment">
+                                <a href="blog-detail-2.html">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="be-ava-comment">
+                                </a>
+                            </div>
+                            <div class="be-comment-content">
+                                <span class="be-comment-name">
+                                    <a href="blog-detail-2.html">Priya Suresh</a>
+                                </span>
+                                <span class="be-comment-time">
+                                    <i class="fa fa-clock-o"></i>
+                                    August 19, 2023
+                                </span>
+                                <p class="be-comment-text">
+                                    For real-time chat functionality using WebSocket in React Native, ensure you handle message synchronization and connection interruptions gracefully. Implement message buffering, reconnection strategies, and error handling. You can also consider using libraries like Socket.io for a more robust real-time chat feature.
+                                </p>
+                                <div class="voting-section" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex;">
+                                        <i class="fa fa-thumbs-up thumbs-up"></i>
+                                        <span class="thumb-count">0</span>
+                                        <i class="fa fa-thumbs-down thumbs-down"></i>
+                                        <span class="thumb-count">0</span>
+                                    </div>
+                                    <a class="reply-link" href="#">
+                                        <i class="fa fa-reply" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                                <div class="comments-section">
+                                    <!-- Comments list here (can be dynamically generated with JavaScript) -->
+                                    <div class="comment">
+                                        <span class="comment-author">John Doe:</span>
+                                        <p class="comment-text">This is a comment.</p>
+                                    </div>
+                                    <!-- Add more comments as needed -->
+                                </div>
+                                <div class="comment-box">
+                                    <input class="name-input" type="text" placeholder="Your Name">
+                                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                                    <button class="post-button">Post</button>
+                                </div>
+                               
+
+                            </div>
+
+                        </div>
+                        <form class="form-block">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="form-group fl_icon">
+                                        <input class="form-input" type="text" placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 fl_icon">
+                                    <div class="form-group fl_icon">
+                                        <input class="form-input" type="text" placeholder="Your email">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <textarea class="form-input" required="" placeholder="Your Comment"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <a class="btn btn-primary pull-right" style="color:#f5f5f5;">Submit</a>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </li>
+
+    <!-- New post 1 -->
+    <li class="example-post">
+        <div class="employee-info-container">
+            <p class="employee-info">Employee ID: 5421</p>
+            <p class="employee-info">Employee Name: Arjun Kumar</p>
+        </div>
+        <div class="challenge-description">
+            <p class="employee-info">Technical Challenge</p>
+            <p class="short-description">
+                I'm working on optimizing database queries in my Java application. I'm facing performance issues with complex SQL queries, and I seek advice on database indexing and query optimization.
+            </p>
+            <p class="full-description" style="display: none;">
+                Despite my efforts, the application experiences slow response times, especially during peak loads. I want to enhance the application's efficiency and minimize database bottlenecks.
+            </p>
+            <a href="#" class="more-details-link" id="more-details-link">More Details</a>
+            <a href="#" class="discuss-link">Discuss</a>
+            <span class="replies-count">3 Replies</span>
+            <div class="comments-dropdown" style="display: none;">
+                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+                <div class="container">
+                    <div class="be-comment-block">
+                        <h1 class="comments-title">Comments (3)</h1>
+                        <div class="be-comment">
+                            <div class="be-img-comment">
+                                <a href="blog-detail-2.html">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="be-ava-comment">
+                                </a>
+                            </div>
+                            <div class="be-comment-content">
+                                <span class="be-comment-name">
+                                    <a href="blog-detail-2.html">Amit Patel</a>
+                                </span>
+                                <span class="be-comment-time">
+                                    <i class="fa fa-clock-o"></i>
+                                    August 15, 2023
+                                </span>
+                                <p class="be-comment-text">
+                                    To optimize database queries in your Java application, consider using proper indexing and query optimization techniques. Identify slow-performing queries and use tools like EXPLAIN to analyze query execution plans. Additionally, review your database schema for any normalization opportunities to reduce redundancy and improve query performance.
+                                </p>
+                                <div class="voting-section" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex;">
+                                        <i class="fa fa-thumbs-up thumbs-up"></i>
+                                        <span class="thumb-count">0</span>
+                                        <i class="fa fa-thumbs-down thumbs-down"></i>
+                                        <span class="thumb-count">0</span>
+                                    </div>
+                                    <a class="reply-link" href="#">
+                                        <i class="fa fa-reply" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                                <div class="comments-section">
+                                    <!-- Comments list here (can be dynamically generated with JavaScript) -->
+                                    <div class="comment">
+                                        <span class="comment-author">John Doe:</span>
+                                        <p class="comment-text">This is a comment.</p>
+                                    </div>
+                                    <!-- Add more comments as needed -->
+                                </div>
+                                <div class="comment-box">
+                                    <input class="name-input" type="text" placeholder="Your Name">
+                                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                                    <button class="post-button">Post</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="be-comment">
+                            <div class="be-img-comment">
+                                <a href="blog-detail-2.html">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="be-ava-comment">
+                                </a>
+                            </div>
+                            <div class="be-comment-content">
+                                <span class="be-comment-name">
+                                    <a href="blog-detail-2.html">Neha Sharma</a>
+                                </span>
+                                <span class="be-comment-time">
+                                    <i class="fa fa-clock-o"></i>
+                                    August 19, 2023
+                                </span>
+                                <p class="be-comment-text">
+                                    To enhance database performance for your Java application, consider implementing caching mechanisms like Redis or Memcached to reduce frequent database queries. Also, explore options for asynchronous processing to offload non-essential tasks and optimize resource utilization.
+                                </p>
+                                <div class="voting-section" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex;">
+                                        <i class="fa fa-thumbs-up thumbs-up"></i>
+                                        <span class="thumb-count">0</span>
+                                        <i class="fa fa-thumbs-down thumbs-down"></i>
+                                        <span class="thumb-count">0</span>
+                                    </div>
+                                    <a class="reply-link" href="#">
+                                        <i class="fa fa-reply" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                                <div class="comments-section">
+                                    <!-- Comments list here (can be dynamically generated with JavaScript) -->
+                                    <div class="comment">
+                                        <span class="comment-author">John Doe:</span>
+                                        <p class="comment-text">This is a comment.</p>
+                                    </div>
+                                    <!-- Add more comments as needed -->
+                                </div>
+                                <div class="comment-box">
+                                    <input class="name-input" type="text" placeholder="Your Name">
+                                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                                    <button class="post-button">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="be-comment">
+                            <div class="be-img-comment">
+                                <a href="blog-detail-2.html">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="be-ava-comment">
+                                   
+                                </a>
+                            </div>
+                            <div class="be-comment-content">
+                                <span class="be-comment-name">
+                                    <a href="blog-detail-2.html">Rajesh Kumar</a>
+                                </span>
+                                <span class="be-comment-time">
+                                    <i class="fa fa-clock-o"></i>
+                                    August 19, 2023
+                                </span>
+                                <p class="be-comment-text">
+                                    To optimize database performance for your Java application, you can also consider using connection pooling and database sharding techniques. This will help distribute the database load and improve scalability.
+                                </p>
+                                <div class="voting-section" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex;">
+                                        <i class="fa fa-thumbs-up thumbs-up"></i>
+                                        <span class="thumb-count">0</span>
+                                        <i class="fa fa-thumbs-down thumbs-down"></i>
+                                        <span class="thumb-count">0</span>
+                                    </div>
+                                    <a class="reply-link" href="#">
+                                        <i class="fa fa-reply" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                                <div class="comments-section">
+                                    <!-- Comments list here (can be dynamically generated with JavaScript) -->
+                                    <div class="comment">
+                                        <span class="comment-author">John Doe:</span>
+                                        <p class="comment-text">This is a comment.</p>
+                                    </div>
+                                    <!-- Add more comments as needed -->
+                                </div>
+                                <div class="comment-box">
+                                    <input class="name-input" type="text" placeholder="Your Name">
+                                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                                    <button class="post-button">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="form-block">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="form-group fl_icon">
+                                        <input class="form-input" type="text" placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 fl_icon">
+                                    <div class="form-group fl_icon">
+                                        <input class="form-input" type="text" placeholder="Your email">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <textarea class="form-input" required="" placeholder="Your Comment"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <a class="btn btn-primary pull-right">Submit</a>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </li>
+
+    <!-- New post 2 -->
+    <li class="example-post">
+        <div class="employee-info-container">
+            <p class="employee-info">Employee ID: 5587</p>
+            <p class="employee-info">Employee Name: Priya Suresh</p>
+        </div>
+        <div class="challenge-description">
+            <p class="employee-info">Technical Challenge</p>
+            <p class="short-description">
+                I'm facing challenges in my mobile app development project. I'm struggling with implementing real-time chat functionality using WebSocket in a React Native app.
+            </p>
+            <p class="full-description" style="display: none;">
+                While I have successfully integrated WebSocket, I face issues with message synchronization and handling connection interruptions. I seek guidance on best practices for building a robust real-time chat feature.
+            </p>
+            <a href="#" class="more-details-link" id="more-details-link">More Details</a>
+            <a href="#" class="discuss-link">Discuss</a>
+            <span class="replies-count">3 Replies</span>
+            <div class="comments-dropdown" style="display: none;">
+                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+                <div class="container">
+                    <div class="be-comment-block">
+                        <h1 class="comments-title">Comments (3)</h1>
+                        <div class="be-comment">
+                            <div class="be-img-comment">
+                                <a href="blog-detail-2.html">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="be-ava-comment">
+                                </a>
+                            </div>
+                            <div class="be-comment-content">
+                                <span class="be-comment-name">
+                                    <a href="blog-detail-2.html">Amit Kapoor</a>
+                                </span>
+                                <span class="be-comment-time">
+                                    <i class="fa fa-clock-o"></i>
+                                    September 5, 2023
+                                </span>
+                                <p class="be-comment-text">
+                                    To address the challenges in your mobile app development project, consider conducting a thorough user research and testing phase. Gather feedback from potential users and iterate on your app's design and features accordingly. Additionally, explore frameworks like React Native or Flutter for cross-platform development to save time and resources.
+                                </p>
+                                <div class="voting-section" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex;">
+                                        <i class="fa fa-thumbs-up thumbs-up"></i>
+                                        <span class="thumb-count">0</span>
+                                        <i class="fa fa-thumbs-down thumbs-down"></i>
+                                        <span class="thumb-count">0</span>
+                                    </div>
+                                    <a class="reply-link" href="#">
+                                        <i class="fa fa-reply" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                                <div class="comments-section">
+                                    <!-- Comments list here (can be dynamically generated with JavaScript) -->
+                                    <div class="comment">
+                                        <span class="comment-author">John Doe:</span>
+                                        <p class="comment-text">This is a comment.</p>
+                                    </div>
+                                    <!-- Add more comments as needed -->
+                                </div>
+                                <div class="comment-box">
+                                    <input class="name-input" type="text" placeholder="Your Name">
+                                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                                    <button class="post-button">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="be-comment">
+                            <div class="be-img-comment">
+                                <a href="blog-detail-2.html">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="be-ava-comment">
+                                </a>
+                            </div>
+                            <div class="be-comment-content">
+                                <span class="be-comment-name">
+                                    <a href="blog-detail-2.html">Neha Sharma</a>
+                                </span>
+                                <span class="be-comment-time">
+                                    <i class="fa fa-clock-o"></i>
+                                    September 6, 2023
+                                </span>
+                                <p class="be-comment-text">
+                                    To overcome challenges in mobile app development, prioritize user experience and keep your app's design simple and intuitive. Test on various devices and ensure compatibility. Utilize version control systems like Git to manage code changes collaboratively, and consider integrating analytics tools for better insights into user behavior.
+                                </p>
+                                <div class="voting-section" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex;">
+                                        <i class="fa fa-thumbs-up thumbs-up"></i>
+                                        <span class="thumb-count">0</span>
+                                        <i class="fa fa-thumbs-down thumbs-down"></i>
+                                        <span class="thumb-count">0</span>
+                                    </div>
+                                    <a class="reply-link" href="#">
+                                        <i class="fa fa-reply" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                                <div class="comments-section">
+                                    <!-- Comments list here (can be dynamically generated with JavaScript) -->
+                                    <div class="comment">
+                                        <span class="comment-author">John Doe:</span>
+                                        <p class="comment-text">This is a comment.</p>
+                                    </div>
+                                    <!-- Add more comments as needed -->
+                                </div>
+                                <div class="comment-box">
+                                    <input class="name-input" type="text" placeholder="Your Name">
+                                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                                    <button class="post-button">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="be-comment">
+                            <div class="be-img-comment">
+                                <a href="blog-detail-2.html">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="be-ava-comment">
+
+                                    
+                                </a>
+                            </div>
+                            <div class="be-comment-content">
+                                <span class="be-comment-name">
+                                    <a href="blog-detail-2.html">Rajesh Kumar</a>
+                                </span>
+                                <span class="be-comment-time">
+                                    <i class="fa fa-clock-o"></i>
+                                    September 6, 2023
+                                </span>
+                                <p class="be-comment-text">
+                                    Facing challenges in mobile app development is common. To address them, maintain open communication with your development team and stakeholders. Regularly update your project roadmap and adapt to changing requirements. Consider using cloud-based services for scalability and monitoring tools for performance optimization.
+                                </p>
+                                <div class="voting-section" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex;">
+                                        <i class="fa fa-thumbs-up thumbs-up"></i>
+                                        <span class="thumb-count">0</span>
+                                        <i class="fa fa-thumbs-down thumbs-down"></i>
+                                        <span class="thumb-count">0</span>
+                                    </div>
+                                    <a class="reply-link" href="#">
+                                        <i class="fa fa-reply" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                                <div class="comments-section">
+                                    <!-- Comments list here (can be dynamically generated with JavaScript) -->
+                                    <div class="comment">
+                                        <span class="comment-author">John Doe:</span>
+                                        <p class="comment-text">This is a comment.</p>
+                                    </div>
+                                    <!-- Add more comments as needed -->
+                                </div>
+                                <div class="comment-box">
+                                    <input class="name-input" type="text" placeholder="Your Name">
+                                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                                    <button class="post-button">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="form-block">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="form-group fl_icon">
+                                        <input class="form-input" type="text" placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 fl_icon">
+                                    <div class="form-group fl_icon">
+                                        <input class="form-input" type="text" placeholder="Your email">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <textarea class="form-input" required="" placeholder="Your Comment"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <a class="btn btn-primary pull-right">Submit</a>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </li>
+</ul>
+
+
+
+
+
+  </html>
+
+
+
+    
+
+<script>
+    $(document).ready(function () {
+        // Listen for click events on the "More Details" links
+        $(".more-details-link").click(function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+
+            // Find the parent .example-post element
+            var post = $(this).closest(".example-post");
+
+            // Find the .full-description element within the post
+            var fullDescription = post.find(".full-description");
+
+            // Toggle the visibility of the .full-description element with a smooth slide effect
+            fullDescription.slideToggle(300, function () {
+                // Scroll to the position of the "More Details" link after the toggle animation
+                $('html, body').animate({
+                    scrollTop: post.offset().top
+                }, 300);
+            });
+        });
+    });
+
+
+
+
+    // Get all discuss links
+    const discussLinks = document.querySelectorAll('.discuss-link');
+
+    // Add click event listener to each discuss link
+    discussLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            // Find the closest .example-post element
+            const post = event.target.closest('.example-post');
+
+            // Find the comments dropdown within the post
+            const commentsDropdown = post.querySelector('.comments-dropdown');
+
+            // Toggle the display of the comments dropdown
+            if (commentsDropdown.style.display === 'none' || commentsDropdown.style.display === '') {
+                commentsDropdown.style.display = 'block';
+            } else {
+                commentsDropdown.style.display = 'none';
+            }
+        });
+    });
+    
+
+    //// Add this JavaScript code to your HTML or include it in a separate script file
+    document.addEventListener('DOMContentLoaded', function () {
+        const thumbsUpIcons = document.querySelectorAll('.thumbs-up');
+        const thumbsDownIcons = document.querySelectorAll('.thumbs-down');
+        const thumbCountElements = document.querySelectorAll('.thumb-count');
+
+        thumbsUpIcons.forEach((icon, index) => {
+            icon.addEventListener('click', function () {
+                // Increment the count when thumbs up is clicked
+                const count = parseInt(thumbCountElements[index].textContent, 10);
+                thumbCountElements[index].textContent = count + 1;
+            });
+        });
+
+        thumbsDownIcons.forEach((icon, index) => {
+            icon.addEventListener('click', function () {
+                // Increment the count when thumbs down is clicked
+                const count = parseInt(thumbCountElements[index + thumbsUpIcons.length].textContent, 10);
+                thumbCountElements[index + thumbsUpIcons.length].textContent = count + 1;
+            });
+        });
+
+        // When the "Reply" link is clicked
+        $(".reply-link").on("click", function (e) {
+            e.preventDefault();
+
+            // Toggle the comments-section and comment-box
+            $(".comments-section, .comment-box").slideToggle("slow");
+
+            // Scroll to the comments-section in a smooth manner
+            $("html, body").animate(
+                {
+                    scrollTop: $(".comments-section").offset().top,
+                },
+                "slow"
+            );
+        });
+
+    });
+
+
+</script>
+
+    
+
+

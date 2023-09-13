@@ -1,0 +1,118 @@
+﻿@{
+    ViewBag.Title = "Articles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="content-container">
+    <h2>Articles</h2>
+    <article>
+        <header>Evoke Technologies Pvt Ltd: A Pioneering Journey</header>
+        <date>Published on October 10, 2023</date>
+        <p>
+            Explore the remarkable journey of Evoke Technologies Pvt Ltd in India. From its inception to becoming a trailblazer in
+            the IT industry, this article sheds light on the company's growth, innovations, and its contribution to the Indian tech
+            landscape.
+        </p>
+        <p>
+            Evoke Technologies has been at the forefront of technological advancements and digital transformation. Discover how the
+            company has been a catalyst for change in various sectors, providing cutting-edge solutions to clients globally.
+        </p>
+        <p>
+            Join us as we delve into the success stories, challenges faced, and the impact of Evoke Technologies Pvt Ltd on India's
+            tech ecosystem.
+        </p>
+    </article>
+
+    <!-- Display a list of articles shared by employees -->
+    <!-- Add a data attribute to store the state of the details for each article -->
+    <!-- Add a data attribute to store the state of the details for each article -->
+    <ul class="article-list">
+        <li>
+            <h3>The Power of Resilience</h3>
+            <p>Author: Ritu Sharma</p>
+            <p>Date: August 10, 2023</p>
+            <p>Description: Discover the stories of Indian corporate leaders who demonstrated remarkable resilience in the face of adversity and achieved unprecedented success.</p>
+            <!-- Add a hidden "More Details" box -->
+            <div class="more-details" id="details1">
+                <p>
+                    In this inspiring article, you'll learn about the challenges faced by some of India's top business leaders and how they overcame them. Explore the strategies they employed to turn adversity into opportunities and achieve extraordinary success.
+                </p>
+            </div>
+            <!-- Add a "More Details" link with a data attribute -->
+            <a class="more-details-link" data-details="details1">More Details</a>
+        </li>
+        <li>
+            <h3>Innovation: The Key to Indian Business Growth</h3>
+            <p>Author: Vikram Verma</p>
+            <p>Date: July 5, 2023</p>
+            <p>Description: Explore how innovation has become a driving force in the Indian corporate sector, enabling businesses to thrive in a rapidly changing landscape.</p>
+            <!-- Add a hidden "More Details" box -->
+            <div class="more-details" id="details2">
+                <p>
+                    Dive into the world of Indian business innovation. This article sheds light on the success stories of companies that embraced innovation as a core strategy. Learn how they adapted to changing market dynamics and achieved significant growth.
+                </p>
+            </div>
+            <!-- Add a "More Details" link with a data attribute -->
+            <a class="more-details-link" data-details="details2">More Details</a>
+        </li>
+        <li>
+            <h3>Leadership Lessons from Indian Icons</h3>
+            <p>Author: Priya Kapoor</p>
+            <p>Date: September 20, 2023</p>
+            <p>Description: Gain insights from the leadership styles and strategies of legendary Indian business figures who left an indelible mark on the corporate world.</p>
+            <!-- Add a hidden "More Details" box -->
+            <div class="more-details" id="details3">
+                <p>
+                    Delve into the leadership philosophies of iconic Indian business leaders. This article explores the unique qualities and approaches that made these individuals stand out. Discover valuable lessons that can inspire your own leadership journey.
+                </p>
+            </div>
+            <!-- Add a "More Details" link with a data attribute -->
+            <a class="more-details-link" data-details="details3">More Details</a>
+        </li>
+        <!-- Add more articles as needed -->
+    </ul>
+
+
+
+    
+
+
+    <!-- Form for employees to share new articles -->
+    <h3>Share an Article</h3>
+    <form>
+        <label for="articleTitle">Title:</label>
+        <input type="text" id="articleTitle" name="articleTitle" required>
+
+        <label for="articleAuthor">Author:</label>
+        <input type="text" id="articleAuthor" name="articleAuthor" required>
+
+        <label for="articleDate">Date:</label>
+        <input type="date" id="articleDate" name="articleDate" required><br /><br />
+
+        <label for="articleDescription">Description:</label>
+        <textarea id="articleDescription" name="articleDescription" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<!-- JavaScript/jQuery code -->
+<script>
+    $(document).ready(function () {
+        // Add click event listener to all "More Details" links
+        $(".more-details-link").click(function () {
+            // Get the data-details attribute value
+            var detailsId = $(this).data("details");
+
+            // Toggle the visibility of the corresponding details box
+            $("#" + detailsId).slideToggle();
+
+            // Prevent the default link behavior
+            return false;
+        });
+    });
+</script>
